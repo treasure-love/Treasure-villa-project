@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book room</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+       
+        :root{
+            --Cream: #F4F1EA;
+            --sage: #8db87a;
+            --Forest: #2c5130;
+            --Deep-Moss: #1A3320;
+            --Mint-Mist: #C9DFC2;
+            --Gold: #C4A84A;
+            --Terra: #C47A50;
+            --light-gold: #E8D8A0;
+            --dark: #0D2018;
+        
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            background: var(--Deep-Moss);
+            opacity: 0.9;
+        }
+
+        .hero{
+            position: relative;
+            height: 100%; /* full screen height */
+        }
+        .hero-bg{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(55%); /* darkens the background image */ 
+        }
+        
+        .book-form{
+            font-family: 'Cormorant Garamond', serif;
+            position: relative;
+            max-width: 400px;
+            flex: 0 0 400px;
+            margin: 100px;
+            margin-left: -50%;
+            padding: 20px;
+            background-color: var(--Deep-Moss);
+            color: var(--Cream);
+            border-radius: 40px;
+            line-height: 2.1rem;
+            width: 100%;
+            border: 1px solid var(--sage);
+            opacity: 0.9;
+            text-align: justify;
+           
+        }
+        .book-title{
+            color:var(--Gold);
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-top: 10px;
+            letter-spacing: 0.1em;   
+            font-style: italic;
+        }
+        .book-desc{
+            color: var(--sage);
+            margin-bottom: 10px;
+        }
+        .booking-form{
+            padding: 10px;
+            font-size: 1.1rem;
+            color: var(--sage);
+            background: transparent;
+            
+        }
+        .booking-form ::placeholder{
+            color: grey;
+            margin-top: 20px;
+        }
+        input{
+            background: transparent;
+            border: 1px solid var(--sage);       
+            padding: 10px;
+            border-radius: 15px;
+            
+        }
+        select{
+            background: transparent;
+            border: 1px solid var(--sage);       
+            padding: 10px;
+            border-radius: 15px;
+            color: var(--sage);
+            cursor: pointer;
+           font-family: 'Cormorant Garamond', serif;
+        }
+        option{
+            background: var(--sage);
+            color: var(--dark);
+        }
+        .btn{
+            font-family: 'Cormorant Garamond', serif;;
+            background: var(--sage);
+            border: none;
+            padding: 10px;
+            text-transform: capitalize;
+            letter-spacing: 0.1em;
+            font-size: 1.02rem;
+            border-radius: 10px;
+            margin-left: 25%;
+            color: var(--Deep-Moss);
+            cursor: pointer;
+            padding: 10px 20px;
+            margin-top: 2rem;
+        }
+        .btn:hover{
+            background: transparent;
+            border: 1px solid var(--sage);  
+            color: var(--sage); 
+            transform: translateY(-5px);
+        }
+        #checkin, #checkout{
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                 <p><a href="#">Treasure villa & suites
+                <span>Rooted in nature. Refined for you.</span>
+            </a></p>
+            </div>
+    
+             <ul class="nav-links">
+                <li><a href="index.html" class="home">HOME</a></li>
+                <li><a href="rooms.html">ROOMS</a></li>
+                <li><a href="#Gallery">GALLERY</a></li>
+                <li><a href="#About">ABOUT</a></li>
+                <li><a href="#Contact">CONTACT</a></li>                   
+            </ul>
+
+            <!-- Hamburger button (only shows on mobile) -->
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div  class="hero-bg"> 
+            <img src="images/rooftop bar.jpeg" alt="background image" width="100%" height="100%">
+        </div>
+
+            <div class="book-form">
+
+                <h2 class="book-title">Book Your Stay</h2>
+
+                <div>
+                    <p class="book-desc">Experience the perfect blend of nature and luxury at Treasure Villa & Suites. Whether you're seeking a romantic getaway, a family vacation, or a solo retreat, Book your stay with us today and immerse yourself in a serene oasis where every detail is designed to provide you with an unforgettable escape.</p>
+                </div>
+                
+                <div>
+                    <form class="booking-form" action="submit_booking.php" method="POST">
+
+                            <label for="name" class="name">Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="Full Name"><br><br>
+                
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required placeholder="Email Address"><br><br>
+                
+                            <label for="checkin">Check-in Date:</label>
+                            <input type="datetime-local" id="checkin" name="checkin" required><br><br>
+                
+                            <label for="checkout">Check-out Date:</label>
+                            <input type="datetime-local" id="checkout" name="checkout" required><br><br>
+
+                            <select name="Room Type" id="room-type">
+                                <option value="" class="select">Select Room Type</option>
+                                <option value="deluxe">Standard Room</option>
+                                <option value="deluxe">Deluxe Room</option>
+                                <option value="suite">Suite</option>
+                            </select><br><br>
+                    
+                            <button type="submit" class="btn" >Confirm booking</button>
+                    </form>
+                
+                </div>
+
+            </div>
+       
+       
+
+    </section>
+</body>
+</html>
