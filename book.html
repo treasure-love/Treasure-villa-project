@@ -4,130 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Book room</title>
-    <link rel="stylesheet" href="css/style.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
-       
-        :root{
-            --Cream: #F4F1EA;
-            --sage: #8db87a;
-            --Forest: #2c5130;
-            --Deep-Moss: #1A3320;
-            --Mint-Mist: #C9DFC2;
-            --Gold: #C4A84A;
-            --Terra: #C47A50;
-            --light-gold: #E8D8A0;
-            --dark: #0D2018;
-        
-        }
-        *{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        nav{
-            background: var(--Deep-Moss);
-            opacity: 0.9;
-        }
+    <link rel="stylesheet" href="css/book.css">
+    <link rel="stylesheet" href="css/rooms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
 
-        .hero{
-            position: relative;
-            height: 100%; /* full screen height */
-        }
-        .hero-bg{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            filter: brightness(55%); /* darkens the background image */ 
-        }
-        
-        .book-form{
-            font-family: 'Cormorant Garamond', serif;
-            position: relative;
-            max-width: 400px;
-            flex: 0 0 400px;
-            margin: 100px;
-            margin-left: -50%;
-            padding: 20px;
-            background-color: var(--Deep-Moss);
-            color: var(--Cream);
-            border-radius: 40px;
-            line-height: 2.1rem;
-            width: 100%;
-            border: 1px solid var(--sage);
-            opacity: 0.9;
-            text-align: justify;
-           
-        }
-        .book-title{
-            color:var(--Gold);
-            font-size: 2.5rem;
-            text-align: center;
-            margin-bottom: 20px;
-            margin-top: 10px;
-            letter-spacing: 0.1em;   
-            font-style: italic;
-        }
-        .book-desc{
-            color: var(--sage);
-            margin-bottom: 10px;
-        }
-        .booking-form{
-            padding: 10px;
-            font-size: 1.1rem;
-            color: var(--sage);
-            background: transparent;
-            
-        }
-        .booking-form ::placeholder{
-            color: grey;
-            margin-top: 20px;
-        }
-        input{
-            background: transparent;
-            border: 1px solid var(--sage);       
-            padding: 10px;
-            border-radius: 15px;
-            
-        }
-        select{
-            background: transparent;
-            border: 1px solid var(--sage);       
-            padding: 10px;
-            border-radius: 15px;
-            color: var(--sage);
-            cursor: pointer;
-           font-family: 'Cormorant Garamond', serif;
-        }
-        option{
-            background: var(--sage);
-            color: var(--dark);
-        }
-        .btn{
-            font-family: 'Cormorant Garamond', serif;;
-            background: var(--sage);
-            border: none;
-            padding: 10px;
-            text-transform: capitalize;
-            letter-spacing: 0.1em;
-            font-size: 1.02rem;
-            border-radius: 10px;
-            margin-left: 25%;
-            color: var(--Deep-Moss);
-            cursor: pointer;
-            padding: 10px 20px;
-            margin-top: 2rem;
-        }
-        .btn:hover{
-            background: transparent;
-            border: 1px solid var(--sage);  
-            color: var(--sage); 
-            transform: translateY(-5px);
-        }
-        #checkin, #checkout{
-            color: grey;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -139,11 +21,12 @@
             </div>
     
              <ul class="nav-links">
-                <li><a href="index.html" class="home">HOME</a></li>
-                <li><a href="rooms.html">ROOMS</a></li>
-                <li><a href="#Gallery">GALLERY</a></li>
-                <li><a href="#About">ABOUT</a></li>
-                <li><a href="#Contact">CONTACT</a></li>                   
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="rooms.html">ROOMS & SUITES</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li> 
+                <div><a href="book.html" class="book">book now</a> </div>                  
             </ul>
 
             <!-- Hamburger button (only shows on mobile) -->
@@ -155,17 +38,44 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <div  class="hero-bg"> 
+    <section >
+        <div  class="hero"> 
             <img src="images/rooftop bar.jpeg" alt="background image" width="100%" height="100%">
+        
+            <div class="room-hero-text">
+                <span class="room-title">book your stay</span><br>
+                <span>Simple. Seamless. <br>
+                    Truly Yours.
+                </span>
+            
+            </div>
+            
+            <div class="room-hero-subtext">
+                <p>Experience the perfect blend of nature and luxury at Treasure Villa & Suites. 
+                    Book your stay with us today and immerse yourself in a serene oasis where every detail is 
+                    designed to provide you with an unforgettable escape
+                </p>
+
+               <a href="#book">book now <span class="arrow"><i class="fa-solid fa-arrow-right" style="color: #c4a84a;"></i></span></a>
+              
+                
+            </div>
+            <div class="hero-overlay" ></div>
+            
         </div>
+       
+       
 
-            <div class="book-form">
+    </section>
 
-                <h2 class="book-title">Book Your Stay</h2>
+    <section class="Book-sect" id="book">
+        <div class="book-sect">
+
+                <p class="book-title">enter details</p>
 
                 <div>
-                    <p class="book-desc">Experience the perfect blend of nature and luxury at Treasure Villa & Suites. Whether you're seeking a romantic getaway, a family vacation, or a solo retreat, Book your stay with us today and immerse yourself in a serene oasis where every detail is designed to provide you with an unforgettable escape.</p>
+                    <p class="book-desc">Fill in your details below to book your perfect 
+                    escape at Treasure Villa and Suites.</p>
                 </div>
                 
                 <div>
@@ -183,11 +93,12 @@
                             <label for="checkout">Check-out Date:</label>
                             <input type="datetime-local" id="checkout" name="checkout" required><br><br>
 
-                            <select name="Room Type" id="room-type">
+                            <select name="Room Type" id="room-type">Select Room Type
                                 <option value="" class="select">Select Room Type</option>
-                                <option value="deluxe">Standard Room</option>
+                                <option value="standard">Standard Room</option>
                                 <option value="deluxe">Deluxe Room</option>
-                                <option value="suite">Suite</option>
+                                <option value="suite">Executive Suite</option>
+                                <option value="suite">Presidential Suite</option>
                             </select><br><br>
                     
                             <button type="submit" class="btn" >Confirm booking</button>
@@ -196,9 +107,70 @@
                 </div>
 
             </div>
-       
-       
+    </section>
+
+     <section class="bottom-nav">
+                <div class="nav-bar">
+                    <div class="address">
+                        <p class="add">ADDRESS</p>
+                        <p class="contact-p">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Lagos-Benin Express way, benin city,edo state, Nigeria
+                        </p>
+                    </div>
+                    
+                    <div class="contact">
+                        <p><i class="fa-solid fa-phone"></i> PHONE</p>
+                        <p class="contact-p">
+                           
+                            <a href="tel:+2348136706788">(+234)8136706788</a>
+                        </p>
+                        <p><i class="fa-regular fa-envelope"></i> EMAIL</p>
+                        <p class="contact-p">
+                           
+                            <a href="mailto:info@treasurevilla.com">info@treasurefaith2001@gmail.com</a>
+                        </p>
+                    </div>
+                    
+                    <div class="quick-links">
+                        <p>QUICK LINKS</p>
+                        <div>
+                            <ul class="nav-link">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="rooms.html" class="active">ROOMS & SUITES</a></li>
+                                <li><a href="Gallery.html">GALLERY</a></li>
+                                <li><a href="About.html">ABOUT</a></li>
+                                <li><a href="Contact.html">CONTACT</a></li>
+                                       
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="social">
+                        <p >SOCIAL</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        
+                    </div>
+        
+                </div>    
 
     </section>
+    <footer>
+        
+        <div class="footer-bottom">
+           <p class="footer-p">&copy; 2026 Treasure Villa & Suites. All rights reserved.</p>
+           <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+           </div>
+        </div>
+    </footer> 
+    <script  src="js/main.js"></script>   
 </body>
 </html>

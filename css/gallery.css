@@ -1,0 +1,228 @@
+
+
+
+.section-header{
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 4rem 5%;
+}
+
+/* small uppercase label above the main section title " our accommodation" */
+
+.section-title{
+    font-family: 'monsterrat', sans-serif;
+    color: var(--sage);
+    font-size: 0.85rem;
+    letter-spacing: 0.4rem;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    font-weight: 400;
+}
+
+/* large decorative subtitle "rooms and suites" */
+
+.section-subtitle{
+    font-family: 'cormorant garamond', serif;
+    display: block;
+    font-size: 4.58rem;
+    color: var(--light-gold);
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* paragraph description under the subtitle */
+
+.section-p{
+    font-family: 'cormorant garamond', serif;
+    font-size: 1.4rem;
+    color: var(--sage);
+    font-style: italic;
+    line-height: 1.8;
+    font-weight: 600;
+    margin-top: -20px; /* pulls it closer to the subtitle above */
+    margin-bottom: 20px;
+}
+
+/* thin horizontal line used as a decorative divider */
+
+.section-divider{
+    width: 80px;
+    height: 2px;
+    background: var(--sage);
+    margin: 0px auto; /* centers the divider */
+}
+.gallery{
+    background: var(--forest);
+    padding-bottom: 0;
+    padding: 4rem 5%;
+}
+
+/* 3-column grid layout for gallery images */
+.gallery-grid{
+   display: grid;
+   grid-template-columns: repeat(4,1fr);
+   gap: 10px;
+   margin: 0 auto;
+   max-width: 1400px;
+   width: 100%;
+   margin-bottom: 10px;
+}
+.gallery-grid2{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    margin: 0 auto;
+    max-width: 1400px;
+    width: 100%;
+}
+
+/* individual gallery image card */
+.img-card{
+    position: relative;
+    overflow: hidden;
+    aspect-ratio: 4/3; /* landscape ratio for gallery */
+    cursor: pointer;
+    height: auto;       
+    min-height: 200px; 
+    width: 100%; 
+}
+
+/* gallery image with zoom transition on hover */
+.gallery-img{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.7s ease;
+}
+
+/* zoom in effect when hovering over gallery image */
+.img-card:hover .gallery-img{
+    transform: scale(1.08);
+}
+.bottom-nav{
+    margin-top: 50px;
+    background-color: var(--Deep-Moss);
+}
+.nav-bar{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+   
+}
+.address, .contact, .quick-links, .social{
+    color: var(--sage);
+    justify-content: space-between;
+    gap: 26px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 25px 20px;
+    height: 400px;
+    line-height: 3.5rem;
+    margin: 0 auto;
+}
+.nav-link{
+    list-style: none;
+
+}
+.nav-bar a{
+    color: var(--sage);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    font-weight: 200;
+    transition: color 0.3s ease;
+}
+.address{
+    border-right: 1px solid var(--sage);
+    line-height: 1.5rem;
+}
+.add{
+    margin-bottom: 20px;
+  
+}
+.contact{
+    border-right: 1px solid var(--sage);
+    line-height: 2.5rem;
+}
+.quick-links{
+    border-right: 1px solid var(--sage);
+    
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto 50px auto;
+    width: fit-content;
+}
+.social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    height: 42px;
+    color: var(--sage);
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease
+}
+.contact a:hover{
+    color: var(--Gold);
+    opacity: 1;
+}
+.quick-links a:hover{
+    color: var(--Gold);
+    opacity: 1;
+}
+.social a:hover{
+    color: var(--Gold);
+    opacity: 1;
+}
+
+
+
+footer{
+    padding: 1rem 5%;
+    color: var(--sage);
+    background-color: var(--Deep-Moss);
+    border-top: 1px solid var(--sage); /* subtle top border separator */
+    
+}
+.footer-bottom{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+
+/* copyright text */
+
+.footer-p{
+    font-size: 1.0rem;
+    margin: 0;
+}
+
+/* privacy policy and terms links container */
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+}
+
+/* privacy and terms links */
+.footer-links a {
+    font-size: 0.75rem;
+    color: var(--sage);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+
+}
+
+.footer-links a:hover {
+    color: var(--Mint-Mist);
+    opacity: 1;
+}

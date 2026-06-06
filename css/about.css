@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+nav{
+    background-color: var(--Deep-Moss);
+}
+.about-sect{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+}
+.about-desc{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 50px;
+    max-width: 500px;
+    margin-left: 0px;
+    
+   
+}
+.about-descs{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-top: 70px;
+    max-width: 500px;
+    margin-left: 70px;
+}
+.about-sub-desc{
+    color: var(--Gold);
+    margin-left: 25px;
+    margin-bottom: 10px;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+}
+.about-sub-descs{
+    color: var(--Gold);
+    margin-left: 0px;
+    margin-bottom: 20px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    
+}
+.about-desc h3{
+    color: var(--sage);
+    text-transform: none;
+    letter-spacing: 0.1em;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+.about-descs h3{
+    color: var(--sage);
+    text-transform: none;
+    letter-spacing: 0.1em;
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+.about-p{
+    color: var(--sage);
+    line-height: 2rem;
+}
+.about-descs a{
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 15px;
+    background-color: transparent;
+    color: var(--Gold);
+    text-decoration: none;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    border: 1px solid var(--Gold);
+}
+.about-descs a:hover{
+    opacity: 0.8;
+}
+.arrow{
+    margin-left: 30px;
+}
+
+.bottom-nav{
+    margin-top: 50px;
+    background-color: var(--Deep-Moss);
+}
+.nav-bar{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.address, .contact, .quick-links, .social{
+    color: var(--sage);
+    justify-content: space-between;
+    gap: 26px;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 25px 20px;
+    height: 400px;
+    line-height: 3.5rem;
+    margin: 0 auto;
+}
+.nav-link{
+    list-style: none;
+
+}
+.nav-bar a{
+    color: var(--sage);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.15em;
+    font-weight: 200;
+    transition: color 0.3s ease;
+}
+.address{
+    border-right: 1px solid var(--sage);
+    line-height: 1.5rem;
+}
+.add{
+    margin-bottom: 20px;
+  
+}
+.contact{
+    border-right: 1px solid var(--sage);
+    line-height: 2.5rem;
+}
+.quick-links{
+    border-right: 1px solid var(--sage);
+    
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 0 auto 50px auto;
+    width: fit-content;
+}
+.social a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 82px;
+    height: 42px;
+    color: var(--sage);
+    font-size: 2rem;
+    text-decoration: none;
+    transition: all 0.3s ease
+}
+.contact a:hover{
+    color: var(--Gold);
+    opacity: 1;
+}
+.quick-links a:hover{
+    color: var(--Gold);
+    opacity: 1;
+}
+.social a:hover{
+    color: var(--Gold);
+    opacity: 1;
+}
+footer{
+    padding: 1rem 5%;
+    color: var(--sage);
+    background-color: var(--Deep-Moss);
+    border-top: 1px solid var(--sage); /* subtle top border separator */
+    
+}
+.footer-bottom{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+
+/* copyright text */
+
+.footer-p{
+    font-size: 1.0rem;
+    margin: 0;
+}
+
+/* privacy policy and terms links container */
+
+.footer-links {
+    display: flex;
+    gap: 16px;
+    margin-left: auto;
+}
+
+/* privacy and terms links */
+.footer-links a {
+    font-size: 0.75rem;
+    color: var(--sage);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+
+}
+
+.footer-links a:hover {
+    color: var(--Mint-Mist);
+    opacity: 1;
+}

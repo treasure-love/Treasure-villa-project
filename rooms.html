@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rooms</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Rooms & Suites</title>
+    <link rel="stylesheet" href="css/rooms.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
     <link rel="stylesheet" href="index.html">
+
 </head>
 <body>
 
@@ -19,12 +23,13 @@
             </a></p>
             </div>
     
-             <ul class="nav-links">
+            <ul class="nav-links">
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="rooms.html">ROOMS</a></li>
-                <li><a href="index.html#Gallery">GALLERY</a></li>
-                <li><a href="index.html#About">ABOUT</a></li>
-                <li><a href="index.html#Contact">CONTACT</a></li>                   
+                <li><a href="rooms.html" class="active">ROOMS & SUITES</a></li>
+                <li><a href="Gallery.html">GALLERY</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="Contact.html">CONTACT</a></li>
+                <div><a href="book.html" class="book">book now</a></div>                   
             </ul>
 
             <!-- Hamburger button (only shows on mobile) -->
@@ -36,73 +41,185 @@
         </nav>
     </header>
 
-     <!--ROOMS SECTION-->
+    <!--HERO SECTION-->
 
-   <section class="rooms" id="Rooms">
 
-        <div class="section-header">
-            <p class="section-title">our Accommodations</p>
-            <h2 class="section-subtitle">Rooms & Suites</h2>
-            <p class="section-p">Each space a sanctuary, each stay a memory.</p>
-            <div class="section-divider"></div>
+    <section>
+        <div class="room-hero">
+            <img src="images/bg3.jpeg" alt="hotel room" width="100%" height="50%">
+        
+            
+            <div class="room-hero-text">
+                <span class="room-title">ROOMS & SUITES</span><br>
+                <span>Rest in Luxury. <br>
+                    Wake  Up to Paradise.
+                </span>
+            
+            </div>
+            
+            <div class="room-hero-subtext">
+                <p>Thoughtfully designed spaces that blend 
+                    comfort, elegance, and modern amenities 
+                    for an unforgettable stay.</p>
+
+               <a href="#rooms">explore rooms <span class="arrow"><i class="fa-solid fa-arrow-right" style="color: #c4a84a;"></i></span></a>
+              
+                
+            </div>
+            <div class="hero-overlay" ></div>
+
         </div>
+    </section>
 
-        <div class="rooms-grid">
-
-            <div class="room-card">
-                <img 
-                class="room-img"
-                src="images/standard room2.jpeg" alt="Standard Room" width="100%" height="67%">
-                <div class="room-overlay">
-                    <span class="room-tag">Standard Room</span>
-                    <div class="room-features">
-                        <span class="feat">King Bed</span>
-                        <span class="feat">Garden View</span>
-                        <span class="feat">Free WiFi</span>
-                        <span class="feat">Air Con</span>
-                    </div>
-                    <p class="room-price">#100,000/night</p>
-                   <span><a href="index.html#Contact" class="room-a">Book Room</a></span>
-                </div>     
-            </div>
-    
-            <div class="room-card">
-                <img 
-                class="room-img"
-                src="images/deluxe room1.jpeg" alt="Deluxe Room" width="100%" height="67%">
-                <div class="room-overlay">
-                    <span class="room-tag">Deluxe Room</span>
-                    <div class="room-features">
-                        <span class="feat">King Bed</span>
-                        <span class="feat">Pool View</span>
-                        <span class="feat">Free WiFi</span>
-                        <span class="feat">Mini Bar</span>
-                        <span class="feat">Balcony</span>
-                    </div>                          
-                    <p class="room-price">#150,000/night</p>
-                    <span><a href="index.html#Contact" class="room-a">Book Room</a></span>
+    <section id="rooms">
+        <div class="Rooms">
+            <div class="rooms-sect">
+                
+                <div>
+                    <span class="price-tag">#100,000</span>
+                    <img src="images/standard room2.jpeg" alt="hotel room" width="100%" height="50%">
                 </div>
+               
+                <div class="rooms-desc">
+                    <p>
+                        Pool / Gym / Bar / Free WiFi
+                    </p>
+                    <h3>standard room</h3>
+                    <p>stylish and cozy rooms with modern comforts and beautiful views</p>
+                    <p>1 king size bed | free wifi | garden view</p>
+                    <p>from #100,000/night</p>
+                    <span><a href="book.html">book now</a></span>
+                </div>
+                
             </div>
-             
-            <div class="room-card">
-                <img 
-                 class="room-img"
-                src="images/suite room3.jpeg" alt="Suite Room" width="100%" height="67%">
-                <div class="room-overlay">
-                    <span class="room-tag">Suite</span>
-                    <div class="room-features">
-                        <span class="feat">Double Bed</span>
-                        <span class="feat">Private Garden</span>
-                        <span class="feat">Butler Service</span>
-                        <span class="feat">Jacuzzi</span>
-                    </div>       
-                    <p class="room-price">#200,000/night</p>
-                    <span><a href="index.html#Contact" class="room-a">Book Room</a></span>
-                </div>                      
+
+            <div  class="rooms-sect">
+
+                <div class="rooms-descs">
+                    <p>
+                        Pool / Gym / Bar / Free WiFi
+                    </p>
+                    <h3>deluxe room</h3>
+                    <p>spacious and elegant rooms with premium amenities and stunning views</p>
+                    <p>1 king size bed | free wifi | pool view | mini bar | balcony</p>
+                    <p>from #150,000/night</p>
+                    <span><a href="book.html">book now</a></span>
+                </div>
+
+                <div>
+                     <span class="price-tag">#150,000</span>
+                    <img src="images/deluxe room1.jpeg" alt="hotel room" width="100%" height="50%">
+                </div>
+               
+            </div>
+            
+            <div  class="rooms-sect">
+                <div>
+                     <span class="price-tag">#200,000</span>
+                    <img src="images/suite room3.jpeg" alt="hotel room" width="100%" height="50%">
+                </div>
+                <div class="rooms-desc">
+                    <p>
+                        Pool / Gym / Bar / Free WiFi
+                    </p>
+                    <h3> executive suite</h3>
+                    
+                    <p>luxurious and spacious suites with separate living areas, premium amenities, and breathtaking views</p>
+                    <p>2 king size beds | free wifi | private garden | butler service | jacuzzi</p>
+                    <p>from #200,000/night</p>
+                    <span><a href="book.html">book now</a></span>
+                    </div>
+            </div>
+
+            <div class="rooms-sect">
+                 
+
+                <div class="rooms-descs">
+                    <p>
+                        Pool / Gym / Bar / Free WiFi
+                    </p>
+                    <h3>presidential suite</h3>
+                   
+                    <p>the epitome of luxury with expansive spaces, top-tier amenities, and panoramic views</p>
+                    <p>2 king size beds | free wifi | city view | butler service | jacuzzi</p>
+                    <p>from #300,000/night</p   >
+                    <span><a href="book.html">book now</a></span>
+                </div>
+
+
+                <div>
+                    <span class="price-tag">#300,000</span>
+                    <img src="images/presid-suite.jpg" alt="hotel room" width="100%" height="100%">
+                </div>
+
+                
             </div>
         </div>
     </section>
-   
+
+    <section class="bottom-nav">
+                <div class="nav-bar">
+                    <div class="address">
+                        <p class="nav-label">ADDRESS</p>
+                        <p class="nav-text">
+                            <i class="fa-solid fa-location-dot"></i>
+                            Lagos-Benin Express way, benin city,edo state, Nigeria
+                        </p>
+                    </div>
+                    
+                    <div class="contact">
+                        <p class="nav-label"><i class="fa-solid fa-phone"></i> PHONE</p>
+                        <p class="nav-text">
+                           
+                            <a href="tel:+2348136706788">(+234)8136706788</a>
+                        </p>
+                        <p class="nav-label"><i class="fa-regular fa-envelope" ></i> EMAIL</p>
+                        <p class="nav-text">
+                           
+                            <a href="mailto:info@treasurevilla.com">info@treasurefaith2001@gmail.com</a>
+                        </p>
+                    </div>
+                    
+                    <div class="quick-links">
+                        <p class="nav-label">QUICK LINKS</p>
+                        <div>
+                            <ul class="nav-link">
+                                <li><a href="index.html">HOME</a></li>
+                                <li><a href="rooms.html" class="active">ROOMS & SUITES</a></li>
+                                <li><a href="Gallery.html">GALLERY</a></li>
+                                <li><a href="About.html">ABOUT</a></li>
+                                <li><a href="Contact.html">CONTACT</a></li>
+                                       
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    
+                    <div class="social">
+                        <p class="nav-label">SOCIAL</p>
+                        <div class="social-links">
+                            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        
+                    </div>
+        
+                </div>    
+
+    </section>
+    <footer>
+        
+        <div class="footer-bottom">
+           <p class="footer-p">&copy; 2026 Treasure Villa & Suites. All rights reserved.</p>
+           <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+           </div>
+        </div>
+    </footer> 
+
      <script  src="js/main.js"></script>   
 </body>
 </html>
